@@ -1,0 +1,183 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root {
+    /* ------------------------------------- */
+    /* Paleta de Colores Base */
+    /* ------------------------------------- */
+    --color-background-primary: #dadada; /* Fondo de la página */
+    --color-text-primary: #2048cc;           /* Color principal del texto */
+    --color-card-background: #fff;       /* Fondo de la calculadora */
+    --color-border-light: #ccc;          /* Borde de inputs */
+    --color-caret:#f5c907; 
+    /* Colores Primarios (Título) */
+    --color-primary: #007bff;            /* Azul del título */
+
+    /* ------------------------------------- */
+    /* Colores deal Botón de Acción (Calcular) */
+    /* ------------------------------------- */
+    --color-button-success: #28a745;     /* Verde base */
+    --color-button-hover: #218838;       /* Verde al pasar el mouse */
+    --color-button-active: #1e7e34;      /* Verde al hacer click */
+    --color-button-disabled: #94d0a2;    /* Verde pálido (deshabilitado) */
+
+    /* ------------------------------------- */
+    /* Colores de Alerta (Error Box) */
+    /* ------------------------------------- */
+    --color-error-background: #f8d7da;   /* Rojo claro de fondo */
+    --color-error-border: #f5c6cb;       /* Borde rojo */
+    --color-error-text: #721c24;         /* Texto rojo oscuro */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--color-background-primary);
+    color: var(--color-text-primary);
+    display: flex;
+    justify-content: center;
+    padding: 3.125rem 1.25rem; 
+}
+
+header {
+    width: 100%;
+    position: fixed; / Mantiene el header en la parte superior */
+    top: 0;
+    left: 0;
+    background-color: var(--color-primary);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+
+
+}
+
+.nav-horizontal {
+    display: flex; 
+    justify-content: space-around; 
+    align-items: center;
+    padding: 1rem 1.rem; 
+}
+
+.nav-horizontal a {
+    text-decoration: none;
+    color: var(--color-card-background);
+    padding: 0.75rem 1.2rem;
+    font-weight: bold;
+    font-size: 1.7rem;
+    transition: background-color 0.3s, color 0.3s, transform 0.2s;
+    white-space: nowrap; 
+    border-radius: var(--border-radius-base);
+}
+
+.nav-horizontal a:hover {
+    color: white;
+    transform: translateY(-2px); 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+}
+
+.menu-toggle, .menu-icon {
+    display: none;
+}
+.container {
+    background: var(--color-card-background);
+    padding: 1.875rem; 
+    border-radius: 0.625rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 50.125rem; 
+
+}
+
+h1 {
+    color: var(--color-primary);
+    text-align: center;
+    margin-bottom: 1.25rem; 
+}
+p {
+  font-weight: bold;  
+  font-size: 1.21rem;;
+  text-align: center;
+}
+
+p img {
+    max-width: 20%; 
+    height: auto;
+}
+
+.input-group {
+    margin-bottom: 0.9375rem; 
+    caret-color: var(--color-caret);
+}
+
+.input-group label {
+    font-size: 1.21rem;
+    display: block;
+    margin-bottom: 0.3125rem; 
+    font-weight: bold;
+}
+
+.input-group input {
+    font-size: 1.21rem;
+    width: 95%;
+    padding: 0.5rem;
+    border: 1px solid var(--color-border-light);
+    border-radius: var(--border-radius-base); 
+}
+
+button {
+    width: 100%;
+    padding: 0.625rem; 
+    background-color: var(--color-button-success);
+    color: white;
+    border: none;
+    border-radius: var(--border-radius-base); 
+    font-size: 1.21rem;
+    cursor: pointer;
+    margin-top: 0.9375rem;
+    transition: background-color 0.3s ease;
+    font-weight: bold; 
+}
+
+button:hover {
+    background-color: var(--color-button-hover);
+}
+
+button:active {
+    background-color: var(--color-button-active);
+}
+
+button:disabled {
+    background-color: var(--color-button-disabled);
+    cursor: not-allowed;
+}
+
+/* --- Gestión Visual de Errores y Resultados --- */
+
+.message-box {
+    padding: 0.9375rem; 
+    border-radius: 0.3125rem; 
+    margin-top: 1.25rem; 
+}
+
+#error-box {
+    background-color: var(--color-error-background);
+    border: 1px solid var(--color-error-border);
+    color: var(--color-error-text);
+    font-size: 1.21rem;
+}
+
+/* Clases CLAVE controladas por JavaScript */
+.error-hidden, .success-hidden {
+    display: none;
+}
+
+.console-note {
+    /* Tamaño de fuente relativo */
+    font-size: var(--font-size-small); /* 0.8em / 0.8rem */
+    color: #6c757d;
+    text-align: center;
+    /* Margen relativo */
+    margin-top: 1.25rem; /* 20px */
+}
