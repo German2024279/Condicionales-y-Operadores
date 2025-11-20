@@ -112,14 +112,14 @@ Usa el código con precaución.
 /* styles.css */
 
 /* 1. Restablecimiento básico para asegurar consistencia entre navegadores */
-* {
+/* * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+} */
 
 /* 2. Estilos para el cuerpo de la página (fondo, fuente y centrado) */
-body {
+/* body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #f0f4f8; /* Un azul claro suave */
     color: #333;
@@ -129,7 +129,7 @@ body {
     align-items: center;
     min-height: 100vh; /* Ocupa el 100% de la altura de la ventana */
     margin: 0;
-}
+} */
 
 /* 3. Estilos para el contenedor principal del contenido */
 .container {
