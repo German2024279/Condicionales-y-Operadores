@@ -18,36 +18,30 @@ h1 { text-align: center; color: #333; }
 h2 { margin-top: 20px; color: #0066cc; }
 p { margin: 5px 0; font-size: 16px; }
 
-<<<<<<< HEAD
 input, button {
     padding: 10px;
     font-size: 16px;
     margin-top: 10px;
-=======
-input, button{
+}
+
+    input, button{
     padding: 10px;
     font-size: 16px;
     margin-top: 10px;
     flex-direction: row;
->>>>>>> 613e6cf47659c640ab262ca497e6929f6a6319f8
 }
 
 button {
     background: #0066cc;
     color: white;
     border: none;
-<<<<<<< HEAD
     border-radius: 6px;
-=======
     border-radius: 6px;;
->>>>>>> 613e6cf47659c640ab262ca497e6929f6a6319f8
     cursor: pointer;
 }
 
 button:hover { background: #004c99; }
 
-<<<<<<< HEAD
-=======
 .pin {
     display: flex;
     flex-wrap: wrap;
@@ -61,7 +55,6 @@ button:hover { background: #004c99; }
 
 }
 
->>>>>>> 613e6cf47659c640ab262ca497e6929f6a6319f8
 #resultados {
     margin-top: 20px;
     padding: 15px;
@@ -84,11 +77,9 @@ button:hover { background: #004c99; }
 .container input,
 .container button,
 .container label {
-<<<<<<< HEAD
   display: block;
   margin: 8px 0;
-=======
-    display: block;
-    margin: 8px 0;
->>>>>>> 613e6cf47659c640ab262ca497e6929f6a6319f8
+  display: block;
+  margin: 8px 0;
+
 }

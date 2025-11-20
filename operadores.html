@@ -1,22 +1,16 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<<<<<<< HEAD
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Demos Visuales de Operadores</title>
     <link rel="stylesheet" href="operadores.css">
-=======
-  <meta charset="UTF-8">
-  <title>Demos Visuales de Operadores</title>
-  <link rel="stylesheet" href="/assets/style.css">
->>>>>>> 476b0622c06ec6722292c8fc75e3782f636552b5
 </head>
 <body>
     <div class="container">
     <h1>Operadores en JavaScript</h1>
 
-    <!-- Valor inicial para x -->
+<!-- Valor inicial para x -->
     <p>Introduce un valor inicial para <code>x</code>:</p>
     <input type="number" id="valorInicial" value="5">
     <p>Introduce la cantidad para operar:</p>
@@ -26,25 +20,25 @@
     <button  onclick="demoPreIncremento()"> + + x</button>
     <button  onclick="demoPostDecremento()">  x - -  </button>
     <button  onclick="demoPreDecremento()">  - - x  </button>
-    <!-- Cantidad para operar -->
+<!-- Cantidad para operar -->
     <button  onclick="demoAcumulativoSuma()">x += n</button>
     <button  onclick="demoAcumulativoResta()">x -= n</button>
     <button  onclick="demoAcumulativoProducto()">x *= n</button>
     <button onclick="demoAcumulativoDivision()">x /= n</button>
     </div>
-    <!-- Comparación -->
+<!-- Comparación -->
     <p>Introduce un valor para comparar:</p>
     <input type="text" id="valorComparacion1" placeholder="Ej. 'true', 5, 'hola'">
     <input type="text" id="valorComparacion2" placeholder="Ej. true, '5', hola">
     <button onclick="demoComparacion()">Comparar</button>
-    <!-- Concatenación -->
+<!-- Concatenación -->
     <p>Introduce tu nombre:</p>
     <input type="text" id="nombre" placeholder="Nombre">
     <p>Introduce tu apellido:</p>
     <input type="text" id="apellido" placeholder="Apellido">
     <button onclick="demoConcatenacion()">Concatenar saludo</button>
 
-    <!-- Evaluación lógica -->
+<!-- Evaluación lógica -->
     <label>
         <input type="checkbox" id="tieneClave" checked>
         Tiene clave
@@ -55,9 +49,6 @@
     </label>
     <button onclick="demoLogicos()">Evaluar lógica</button>
     <button onclick="demoLogicos()">Tabla de verdad (&&, ||, !)</button>
-
-    <!-- Resultados y barra -->
-    <div id="resultados"></div>
 </div>
 
 <!-- Scripts -->
