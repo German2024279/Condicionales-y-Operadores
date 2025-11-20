@@ -2,60 +2,68 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Demos Visuales de Operadores</title>
-    <link rel="stylesheet" href="operadores.css">
+    <link rel="stylesheet" href="assets/css/operadores.css">
 </head>
+<header>
+    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+    <label for="menu-toggle" class="menu-icon">☰</label>
+
+    <nav id="nav-menu" class="nav-horizontal"> 
+        <a href="#" class="menu-button op-condicionales">Condicionales</a>
+        <a href="operadores.html" class="menu-button op-operadores">Operadores</a>
+        <a href="G_errores.html" class="menu-button op-errores">Gestión de Errores</a>
+        <a href="predefinidos.html" class="menu-button op-predefinidas">Operaciones Predefinidas</a>
+        </nav>
+</header>
 <body>
-<div class="container">
+    <div class="container">
     <h1>Operadores en JavaScript</h1>
-    
+
+<!-- Valor inicial para x -->
     <p>Introduce un valor inicial para <code>x</code>:</p>
     <input type="number" id="valorInicial" value="5">
-
     <p>Introduce la cantidad para operar:</p>
     <input type="number" id="cantidad" value="1">
+    <div class="pin">
+    <button  onclick="demoPostIncremento()"> x + +</button>
+    <button  onclick="demoPreIncremento()"> + + x</button>
+    <button  onclick="demoPostDecremento()">  x - -  </button>
+    <button  onclick="demoPreDecremento()">  - - x  </button>
+<!-- Cantidad para operar -->
+    <button  onclick="demoAcumulativoSuma()">x += n</button>
+    <button  onclick="demoAcumulativoResta()">x -= n</button>
+    <button  onclick="demoAcumulativoProducto()">x *= n</button>
+    <button onclick="demoAcumulativoDivision()">x /= n</button>
+    </div>
+<!-- Comparación -->
+    <p>Introduce un valor para comparar:</p>
+    <input type="text" id="valorComparacion1" placeholder="Ej. 'true', 5, 'hola'">
+    <input type="text" id="valorComparacion2" placeholder="Ej. true, '5', hola">
+    <button onclick="demoComparacion()">Comparar</button>
+<!-- Concatenación -->
     <p>Introduce tu nombre:</p>
     <input type="text" id="nombre" placeholder="Nombre">
-
     <p>Introduce tu apellido:</p>
     <input type="text" id="apellido" placeholder="Apellido">
-
     <button onclick="demoConcatenacion()">Concatenar saludo</button>
 
+<!-- Evaluación lógica -->
     <label>
-    <input type="checkbox" id="tieneClave" checked>
-    Tiene clave
+        <input type="checkbox" id="tieneClave" checked>
+        Tiene clave
     </label>
-
     <label>
-    <input type="checkbox" id="esAdmin">
-    Es administrador
+        <input type="checkbox" id="esAdmin">
+        Es administrador
     </label>
-
-    <button onclick="demoLogicos()">Evaluar</button>
-
-    <!-- Botones -->
-    <button onclick="demoPostIncremento()">x++</button>
-    <button onclick="demoPreDecremento()">--x</button>
-    <button onclick="demoPostDecremento()">x--</button>
-    <button onclick="demoPreIncremento()">++x</button>
-    <button onclick="demoAcumulativoSuma()">x += n</button>
-    <button onclick="demoAcumulativoResta()">x -= n</button>
-    <button onclick="demoAcumulativoProducto()">x *= n</button>
-    <button onclick="demoAcumulativoDivision()">x /= n</button>
-    <button onclick="demoComparacion()">Comparación == vs ===</button>
+    <button onclick="demoLogicos()">Evaluar lógica</button>
     <button onclick="demoLogicos()">Tabla de verdad (&&, ||, !)</button>
-    <button onclick="demoConcatenacion()">Concatenación de cadenas</button>
-
-
-    <div id="resultados"></div>
-    <div id="barra"></div>
 </div>
 
-<!-- Scripts: primero main.js -->
+<!-- Scripts -->
     <script src="js/main.js"></script>
-
-<!-- Demos en carpeta js -->
     <script src="js/demo_comparacion.js"></script>
     <script src="js/demo_logicos.js"></script>
     <script src="js/demo_concatenacion.js"></script>
@@ -67,6 +75,5 @@
     <script src="js/demo_acumulativoDivision.js"></script>
     <script src="js/demo_preDecremento.js"></script>
     <script src="js/demo_postDecremento.js"></script>
-    
 </body>
 </html>
