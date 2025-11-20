@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #dadada;
+    margin: 10px;
+    padding: 0;
+}
+
+.container {
+    max-width: 700px;
+    margin: 90px auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+h1 { text-align: center; color: #2048cc; }
+h2 { margin-top: 20px; color: #0066cc; }
+p { margin: 5px 0; font-size: 16px; }
+
+    input, button{
+    padding: 10px;
+    font-size: 16px;
+    margin-top: 10px;
+    flex-direction: row;
+}
+
+button {
+    background: #2048cc;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    border-radius: 6px;;
+    cursor: pointer;
+}
+
+button:hover { background: #004c99; }
+
+.pin {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 10px;  
+    margin-top: 20px;
+    height: 60px;
+    background: #e1e8ed;
+    border: 2px dashed #ccc;
+    border-radius: 10px;
+
+}
+
+#resultados {
+    margin-top: 20px;
+    padding: 15px;
+    background: #f9fafc;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.container input,
+.container button,
+.container label {
+  display: block;
+  margin: 15px 0;
+  display: block;
+}
+
+header {
+    width: 100%;
+    position: fixed; /* Mantiene el header en la parte superior */
+    top: 0;
+    left: 0;
+    background-color: #007bff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+
+
+}
+
+.nav-horizontal {
+    display: flex; 
+    justify-content: space-around; 
+    align-items: center;
+    padding: 1rem 1.rem; 
+}
+
+.nav-horizontal a {
+    text-decoration: none;
+    color: #fff;
+    padding: 0.75rem 1.2rem;
+    font-weight: bold;
+    font-size: 1.7rem;
+    transition: background-color 0.3s, color 0.3s, transform 0.2s;
+    white-space: nowrap; 
+    border-radius: var(--border-radius-base);
+}
+
+.nav-horizontal a:hover {
+    background-color: var(--color-button-success); 
+    color: white;
+    transform: translateY(-2px); 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+}
+
+.menu-toggle, .menu-icon {
+    display: none;
+}

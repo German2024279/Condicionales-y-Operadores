@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Calculadora Funcional</title>
+  <link rel="stylesheet" href="alert.css">
+</head>
+<header>
+    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+    <label for="menu-toggle" class="menu-icon">☰</label>
+
+    <nav id="nav-menu" class="nav-horizontal"> 
+      <a href="#" class="menu-button op-condicionales">Condicionales</a>
+      <a href="operadores.html" class="menu-button op-operadores">Operadores</a>
+      <a href="G_errores.html" class="menu-button op-errores">Gestión de Errores</a>
+      <a href="predefinidos.html" class="menu-button op-predefinidas">Operaciones Predefinidas</a>
+      </nav>
+</header>
+<body>
+  <h1>Ejemplo de Alerta</h1>
+  <p>Haz clic en el botón de abajo para ver una alerta de JavaScript.</p>
+  <button onclick="mostrarAlerta()">Mostrar Alerta</button>
+
+  <hr>
+
+  <h2> Calculadora de Operadores</h2>
+
+  <label>Número A:</label>
+  <input type="text" id="a" value="10"><br>
+
+  <label>Número B:</label>
+  <input type="text" id="b" value="5"><br>
+
+  <label>Operador:</label>
+  <select id="operador">
+    <option value="+">Suma (+)</option>
+    <option value="-">Resta (-)</option>
+    <option value="*">Multiplicación (*)</option>
+    <option value="/">División (/)</option>
+    <option value="%">Módulo (%)</option>
+    <option value="==">Igualdad (==)</option>
+    <option value="===">Igualdad estricta (===)</option>
+    <option value="&&">AND lógico</option>
+    <option value="||">OR lógico</option>
+    <option value="concat">Concatenar cadenas</option>
+  </select><br>
+
+  <button onclick="calcular()">Calcular</button>
+
+  <div id="resultado"></div>
+      <h2>Uso de la función confirm() en JavaScript</h2>
+
+    <button onclick="pedirConfirmacion()">Hacer clic para confirmar</button>
+
+    <!-- <p id="resultado"></p> -->
+         <h2>Uso de console.log() en JavaScript</h2>
+    <p>Abre las herramientas de desarrollador de tu navegador (usualmente presionando `F12` o `Ctrl + Shift + I`), y ve a la pestaña **"Console"** para ver los mensajes.</p>
+
+    <button onclick="saludar()">Hacer clic</button>
+        <h2>Desestructuración de Objetos en JavaScript</h2>
+    <p>Abre la consola del navegador (F12) para ver la salida.</p>
+        <h2>Uso de document.write() en JavaScript</h2>
+    <p>El texto a continuación ha sido añadido usando JavaScript.</p>
+        <h1>Ejemplo de uso de prompt()</h1>
+    <p>Abre esta página en tu navegador para ver cómo funciona el cuadro de diálogo.</p>
+
+  <!-- Scripts externos -->
+  <script src="/js/Calc.js"></script>
+  <script src="/js/Confirm.js"></script>
+  <script src="/js/ConsoleLog.js"></script>
+  <script src="/js/Desestructuracion.js"></script>
+  <script src="/js/Documentewrite.js"></script>
+  <script src="/js/Prompt.js"></script>
+</body>
+</html>
