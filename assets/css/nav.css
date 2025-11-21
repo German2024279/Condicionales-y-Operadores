@@ -1,0 +1,43 @@
+/* Estilos compartidos para la navegación: aseguran apariencia idéntica en todas las páginas */
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #007bff; /* color primario consistente */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+  z-index: 1000;
+}
+
+.nav-horizontal {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0.75rem 1rem;
+}
+
+.nav-horizontal a {
+  text-decoration: none;
+  color: #ffffff;
+  padding: 0.5rem 1rem;
+  font-weight: 700;
+  font-size: 1rem;
+  border-radius: 6px;
+  transition: background-color 0.2s ease, transform 0.15s ease;
+}
+
+.nav-horizontal a:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+.menu-toggle, .menu-icon {
+  display: none;
+}
+
+/* Pequeños ajustes para que el contenido no quede oculto bajo el header fijo */
+body { /* solo si no existe margen superior suficiente en la página */
+  --nav-height: 64px;
+}
+
+/* Si alguna página necesita más espacio, puede sobrescribir padding-top en su CSS */
