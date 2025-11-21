@@ -7,11 +7,12 @@ Repositorio de ejemplos didácticos sobre operadores y estructuras de control en
 - `css`: Estilos para la página de ejemplo.
 - `js/` : Carpeta con ejemplos y scripts.
 - `img/`: Carpeta con imagen de Ecuación cuadrática.
+```text
 .
 ├── assets
 │   ├── css
 │   │   ├── condicionales.css
-│   │   ├── G_errores..css
+│   │   ├── G_errores.css
 │   │   ├── img
 │   │   │   └── image-3741.png
 │   │   ├── nav.css
