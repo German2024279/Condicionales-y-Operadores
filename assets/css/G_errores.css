@@ -8,37 +8,78 @@
     /* ------------------------------------- */
     /* Paleta de Colores Base */
     /* ------------------------------------- */
-    --color-background-primary: #dadada; /* Fondo de la página */
-    --color-text-primary: #2048cc;           /* Color principal del texto */
-    --color-card-background: #fff;       /* Fondo de la calculadora */
-    --color-border-light: #ccc;          /* Borde de inputs */
+    --color-background-primary: #dadada; 
+    --color-text-primary: #2048cc;           
+    --color-card-background: #fff;       
+    --color-border-light: #ccc;          
     --color-caret:#f5c907; 
-    /* Colores Primarios (Título) */
-    --color-primary: #007bff;            /* Azul del título */
+    /* Colores Primaºrios (Título) */
+    --color-primary: #007bff;            
 
     /* ------------------------------------- */
     /* Colores deal Botón de Acción (Calcular) */
     /* ------------------------------------- */
-    --color-button-success: #28a745;     /* Verde base */
-    --color-button-hover: #218838;       /* Verde al pasar el mouse */
-    --color-button-active: #1e7e34;      /* Verde al hacer click */
-    --color-button-disabled: #94d0a2;    /* Verde pálido (deshabilitado) */
+    --color-button-success: #28a745;     
+    --color-button-hover: #218838;       
+    --color-button-active: #1e7e34;      
+    --color-button-disabled: #94d0a2;    
 
     /* ------------------------------------- */
     /* Colores de Alerta (Error Box) */
     /* ------------------------------------- */
-    --color-error-background: #f8d7da;   /* Rojo claro de fondo */
-    --color-error-border: #f5c6cb;       /* Borde rojo */
-    --color-error-text: #721c24;         /* Texto rojo oscuro */
+    --color-error-background: #f8d7da;   
+    --color-error-border: #f5c6cb;       
+    --color-error-text: #721c24;        
 }
+
+
 
 body {
     font-family: Arial, sans-serif;
     background-color: var(--color-background-primary);
     color: var(--color-text-primary);
-    display: flex;
-    justify-content: center;
     padding: 3.125rem 1.25rem; 
+    padding-top: 6.25rem;
+    min-height: 100vh;
+}
+header {
+    width: 100%;
+    position: fixed; /* Mantiene el header en la parte superior */
+    top: 0;
+    left: 0;
+    background-color: var(--color-primary);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+
+
+}
+
+.nav-horizontal {
+    display: flex; 
+    justify-content: space-around; 
+    align-items: center;
+    padding: 1rem 1.rem; 
+}
+
+.nav-horizontal a {
+    text-decoration: none;
+    color: var(--color-card-background);
+    padding: 0.75rem 1.2rem;
+    font-weight: bold;
+    font-size: 1.7rem;
+    transition: background-color 0.3s, color 0.3s, transform 0.2s;
+    white-space: nowrap; 
+    border-radius: var(--border-radius-base);
+}
+
+.nav-horizontal a:hover {
+    color: white;
+    transform: translateY(-2px); 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+}
+
+.menu-toggle, .menu-icon {
+    display: none;
 }
 
 header {
@@ -87,6 +128,7 @@ header {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     width: 100%;
     max-width: 50.125rem; 
+    margin: 0 auto;
 
 }
 

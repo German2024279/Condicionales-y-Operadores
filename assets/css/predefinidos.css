@@ -87,15 +87,10 @@ button:active {
     transform: translateY(1px);
 }
 
-Usa el código con precaución.
 
-
-/* styles.css */
-
-/* 1. Restablecimiento básico para asegurar consistencia entre navegadores */
-* {
-    margin: 0;
+*{
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
 
