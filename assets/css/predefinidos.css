@@ -259,8 +259,6 @@ p {
     font-weight: bold;
 }
 
-<<<<<<< HEAD
-=======
 header {
     width: 100%;
     position: fixed; /* Mantiene el header en la parte superior */
@@ -446,7 +444,7 @@ b {
 
 header {
     width: 100%;
-    position: fixed; / Mantiene el header en la parte superior */
+    position: fixed;
     top: 0;
     left: 0;
     background-color: var(--color-primary);
@@ -483,4 +481,3 @@ header {
 .menu-toggle, .menu-icon {
     display: none;
 }
->>>>>>> da8d835ad625a9cb5a3c981be5f94411ae24296c
