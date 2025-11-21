@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Demos Visuales de Operadores</title>
     <link rel="stylesheet" href="assets/css/operadores.css">
+    <link rel="stylesheet" href="assets/css/nav.css">
 </head>
 <header>
     <input type="checkbox" id="menu-toggle" class="menu-toggle">
     <label for="menu-toggle" class="menu-icon">☰</label>
 
     <nav id="nav-menu" class="nav-horizontal"> 
-      <a href="#" class="menu-button op-condicionales">Condicionales</a>
+      <a href="index.html" class="menu-button op-condicionales">Condicionales</a>
       <a href="operadores.html" class="menu-button op-operadores">Operadores</a>
       <a href="G_errores.html" class="menu-button op-errores">Gestión de Errores</a>
       <a href="predefinidos.html" class="menu-button op-predefinidas">Operaciones Predefinidas</a>
@@ -61,9 +62,19 @@
     <button onclick="demoLogicos()">Evaluar lógica</button>
     <button onclick="demoLogicos()">Tabla de verdad (&&, ||, !)</button>
 </div>
+    <!-- Result area -->
+    <div id="resultados" aria-live="polite"></div>
+
+    <!-- Barra visual opcional -->
+    <div id="barra" style="height:10px;background:#e9ecef;border-radius:6px;overflow:hidden;margin-top:12px;max-width:700px;">
+        <div id="barra-fill" style="height:100%;width:0%;background:#2048cc;transition:width 0.3s ease;"></div>
+    </div>
 
 <!-- Scripts -->
+<<<<<<< HEAD
     <script src="assets/js/main.js"></script>
+=======
+>>>>>>> da8d835ad625a9cb5a3c981be5f94411ae24296c
     <script src="assets/js/demo_comparacion.js"></script>
     <script src="assets/js/demo_logicos.js"></script>
     <script src="assets/js/demo_concatenacion.js"></script>
@@ -75,5 +86,9 @@
     <script src="assets/js/demo_acumulativoDivision.js"></script>
     <script src="assets/js/demo_preDecremento.js"></script>
     <script src="assets/js/demo_postDecremento.js"></script>
+<<<<<<< HEAD
+=======
+    <script src="assets/js/operadores_main.js"></script>
+>>>>>>> da8d835ad625a9cb5a3c981be5f94411ae24296c
 </body>
 </html>

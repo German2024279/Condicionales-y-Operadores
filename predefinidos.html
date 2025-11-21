@@ -4,13 +4,14 @@
   <meta charset="UTF-8">
   <title>Calculadora Funcional</title>
   <link rel="stylesheet" href="assets/css/predefinidos.css">
+  <link rel="stylesheet" href="assets/css/nav.css">
 </head>
 <header>
     <input type="checkbox" id="menu-toggle" class="menu-toggle">
     <label for="menu-toggle" class="menu-icon">☰</label>
 
     <nav id="nav-menu" class="nav-horizontal"> 
-      <a href="#" class="menu-button op-condicionales">Condicionales</a>
+      <a href="index.html" class="menu-button op-condicionales">Condicionales</a>
       <a href="operadores.html" class="menu-button op-operadores">Operadores</a>
       <a href="G_errores.html" class="menu-button op-errores">Gestión de Errores</a>
       <a href="predefinidos.html" class="menu-button op-predefinidas">Operaciones Predefinidas</a>
@@ -61,8 +62,12 @@
     <p>Abre la consola del navegador (F12) para ver la salida.</p>
         <h2>Uso de document.write() en JavaScript</h2>
     <p>El texto a continuación ha sido añadido usando JavaScript.</p>
-        <h1>Ejemplo de uso de prompt()</h1>
-    <p>Abre esta página en tu navegador para ver cómo funciona el cuadro de diálogo.</p>
+    <h1>Ejemplo de uso de prompt()</h1>
+    <div class="prompt-demo">
+      <p>Prueba interactiva: pulsa el botón y escribe tu nombre en el cuadro de diálogo.</p>
+      <button type="button" onclick="mostrarPromptExample()">Probar prompt()</button>
+      <div id="promptResult" style="display:none;margin-top:12px;padding:10px;background:#eef6ff;border:1px solid #cfe4ff;border-radius:6px;font-weight:600;color:#0b3d91;"></div>
+    </div>
 
   <!-- Scripts externos -->
   <script src="assets/js/Calc.js"></script>

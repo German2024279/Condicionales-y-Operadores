@@ -38,6 +38,7 @@ body {
     font-family: Arial, sans-serif;
     background-color: var(--color-background-primary);
     color: var(--color-text-primary);
+<<<<<<< HEAD:assets/css/G_errores.css
     padding: 3.125rem 1.25rem; 
     padding-top: 6.25rem;
     min-height: 100vh;
@@ -52,6 +53,12 @@ header {
     z-index: 1000;
 
 
+=======
+    display: flex;
+    justify-content: center;
+    /* aumentar padding-top para dejar espacio al header fijo */
+    padding: 5rem 1.25rem;
+>>>>>>> da8d835ad625a9cb5a3c981be5f94411ae24296c:assets/css/G_errores..css
 }
 
 .nav-horizontal {
@@ -143,9 +150,12 @@ p {
   text-align: center;
 }
 
-p img {
-    max-width: 20%; 
+/* Las imágenes dentro de la clase .img deben ser responsivas y no mostrar icono roto en línea */
+.img{
+    max-width: 50%;
     height: auto;
+    display: block;
+    margin: 0.75rem auto; /* separar del texto y centrar */
 }
 
 .input-group {
@@ -222,4 +232,44 @@ button:disabled {
     text-align: center;
     /* Margen relativo */
     margin-top: 1.25rem; /* 20px */
+}
+
+header {
+    width: 100%;
+    position: fixed; /* Mantiene el header en la parte superior */
+    top: 0;
+    left: 0;
+    background-color: var(--color-primary);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+
+
+}
+
+.nav-horizontal {
+    display: flex; 
+    justify-content: space-around; 
+    align-items: center;
+    padding: 1rem 1.rem; 
+}
+
+.nav-horizontal a {
+    text-decoration: none;
+    color: var(--color-card-background);
+    padding: 0.75rem 1.2rem;
+    font-weight: bold;
+    font-size: 1.7rem;
+    transition: background-color 0.3s, color 0.3s, transform 0.2s;
+    white-space: nowrap; 
+    border-radius: var(--border-radius-base);
+}
+
+.nav-horizontal a:hover {
+    color: white;
+    transform: translateY(-2px); 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+}
+
+.menu-toggle, .menu-icon {
+    display: none;
 }
