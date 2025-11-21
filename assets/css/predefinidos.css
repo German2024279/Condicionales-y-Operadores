@@ -1,23 +1,4 @@
-/* 1. Reset básico para consistencia entre navegadores */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* 2. Estilos generales del cuerpo */
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f0f4f8;
-  color: #333;
-  line-height: 1.6;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-}/* Estilos para todo el cuerpo de la página */
+/* Estilos para todo el cuerpo de la página */
 body {
     font-family: sans-serif; /* Fuente legible */
     margin: 20px; /* Margen alrededor del contenido */
@@ -112,14 +93,14 @@ Usa el código con precaución.
 /* styles.css */
 
 /* 1. Restablecimiento básico para asegurar consistencia entre navegadores */
-/* * {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-} */
+}
 
 /* 2. Estilos para el cuerpo de la página (fondo, fuente y centrado) */
-/* body {
+body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #f0f4f8; /* Un azul claro suave */
     color: #333;
@@ -129,7 +110,7 @@ Usa el código con precaución.
     align-items: center;
     min-height: 100vh; /* Ocupa el 100% de la altura de la ventana */
     margin: 0;
-} */
+}
 
 /* 3. Estilos para el contenedor principal del contenido */
 .container {
@@ -283,185 +264,3 @@ p {
     font-weight: bold;
 }
 
-header {
-    width: 100%;
-    position: fixed; /* Mantiene el header en la parte superior */
-    top: 0;
-    left: 0;
-    background-color: var(--color-primary);
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-    z-index: 1000;
-
-
-}
-
-.nav-horizontal {
-    display: flex; 
-    justify-content: space-around; 
-    align-items: center;
-    padding: 1rem 1.rem; 
-}
-
-.nav-horizontal a {
-    text-decoration: none;
-    color: var(--color-card-background);
-    padding: 0.75rem 1.2rem;
-    font-weight: bold;
-    font-size: 1.7rem;
-    transition: background-color 0.3s, color 0.3s, transform 0.2s;
-    white-space: nowrap; 
-    border-radius: var(--border-radius-base);
-}
-
-.nav-horizontal a:hover {
-    background-color: var(--color-button-success); 
-    color: white;
-    transform: translateY(-2px); 
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
-}
-
-.menu-toggle, .menu-icon {
-    display: none;
-}
-
-
-/* 3. Encabezado principal */
-h1 {
-  color: #007bff;
-  text-align: center;
-  margin-bottom: 15px;
-  font-size: 2rem;
-}
-
-/* 4. Subtítulos */
-h2 {
-  color: #0056b3;
-  border-bottom: 2px solid #007bff;
-  padding-bottom: 10px;
-  margin-bottom: 15px;
-  text-align: center;
-}
-
-h3 {
-  color: #2c3e50;
-  margin-top: 20px;
-  margin-bottom: 10px;
-}
-
-/* 5. Contenedor principal */
-.container {
-  background: #ffffff;
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  max-width: 700px;
-  width: 90%;
-  text-align: center;
-}
-
-/* 6. Párrafos */
-p {
-  background-color: #e9ecef;
-  padding: 15px;
-  border-radius: 8px;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-  color: #555;
-  margin-bottom: 20px;
-  text-align: center;
-}
-
-/* 7. Párrafo destacado */
-.note-important {
-  background-color: #fffacd;
-  border-left: 5px solid #ffeb3b;
-  padding: 15px;
-  font-size: 0.9rem;
-}
-
-/* 8. Botones */
-button {
-  display: block;
-  margin: 20px auto;
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  font-size: 16px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-button:hover {
-  background-color: #0056b3;
-}
-
-button:active {
-  background-color: #004085;
-  transform: translateY(1px);
-}
-
-/* 9. Inputs y selects */
-input, select {
-  margin: 5px;
-  padding: 5px;
-}
-
-/* 10. Resultado dinámico */
-#resultado {
-  margin-top: 15px;
-  font-weight: bold;
-}
-
-/* 11. Header fijo */
-header {
-  width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  background-color: var(--color-primary);
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-  z-index: 1000;
-}
-
-/* 12. Navegación horizontal */
-.nav-horizontal {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 1rem;
-}
-
-.nav-horizontal a {
-  text-decoration: none;
-  color: var(--color-card-background);
-  padding: 0.75rem 1.2rem;
-  font-weight: bold;
-  font-size: 1.7rem;
-  transition: background-color 0.3s, color 0.3s, transform 0.2s;
-  white-space: nowrap;
-  border-radius: var(--border-radius-base);
-}
-
-.nav-horizontal a:hover {
-  background-color: var(--color-button-success);
-  color: white;
-  transform: translateY(-2px);
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-}
-
-.menu-toggle, .menu-icon {
-  display: none;
-}
-
-/* 13. Código y negrita */
-code {
-  background-color: #e9ecef;
-  padding: 2px 5px;
-  border-radius: 3px;
-  font-family: monospace;
-}
-
-b {
-  color: #d9534f;
-}

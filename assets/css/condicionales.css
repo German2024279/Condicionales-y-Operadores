@@ -309,7 +309,7 @@ footer {
 
 header {
     width: 100%;
-    position: fixed; / Mantiene el header en la parte superior */
+    position: fixed; 
     top: 0;
     left: 0;
     background-color: var(--color-primary);
