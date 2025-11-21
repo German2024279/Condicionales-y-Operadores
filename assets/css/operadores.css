@@ -105,3 +105,43 @@ header {
 .menu-toggle, .menu-icon {
     display: none;
 }
+
+header {
+    width: 100%;
+    position: fixed; / Mantiene el header en la parte superior */
+    top: 0;
+    left: 0;
+    background-color: var(--color-primary);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+
+
+}
+
+.nav-horizontal {
+    display: flex; 
+    justify-content: space-around; 
+    align-items: center;
+    padding: 1rem 1.rem; 
+}
+
+.nav-horizontal a {
+    text-decoration: none;
+    color: var(--color-card-background);
+    padding: 0.75rem 1.2rem;
+    font-weight: bold;
+    font-size: 1.7rem;
+    transition: background-color 0.3s, color 0.3s, transform 0.2s;
+    white-space: nowrap; 
+    border-radius: var(--border-radius-base);
+}
+
+.nav-horizontal a:hover {
+    color: white;
+    transform: translateY(-2px); 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+}
+
+.menu-toggle, .menu-icon {
+    display: none;
+}
