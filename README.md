@@ -15,6 +15,47 @@ Repositorio de ejemplos didácticos sobre estructuras de control en JavaScript. 
 - `operadores.html`: Página principal que carga los demos y muestra resultados.
 - `operadores.css`: Estilos para la página de ejemplo.
 - `js/` : Carpeta con ejemplos y scripts.
+- `img/`: Carpeta con imagen de Ecuación cuadrática.
+.
+├── assets
+│   ├── css
+│   │   ├── condicionales.css
+│   │   ├── G_errores..css
+│   │   ├── img
+│   │   │   └── image-3741.png
+│   │   ├── nav.css
+│   │   ├── operadores.css
+│   │   └── predefinidos.css
+│   └── js
+│       ├── alert.js
+│       ├── Calc.js
+│       ├── condicionales.js
+│       ├── Confirm.js
+│       ├── ConsoleLog.js
+│       ├── demo_acumulativoDivision.js
+│       ├── demo_acumulativoProducto.js
+│       ├── demo_acumulativoResta.js
+│       ├── demo_acumulativoSuma.js
+│       ├── demo_comparacion.js
+│       ├── demo_concatenacion.js
+│       ├── demo_logicos.js
+│       ├── demo_postDecremento.js
+│       ├── demo_postIncremento.js
+│       ├── demo_preDecremento.js
+│       ├── demo_preIncremento.js
+│       ├── Desestructuracion.js
+│       ├── Documentewrite.js
+│       ├── G_errores.js
+│       ├── operadores_main.js
+│       └── Prompt.js
+├── G_errores.html
+├── index.html
+├── operadores.html
+├── predefinidos.html
+└── README.md
+
+5 directories, 32 files
+
 
 **Cómo ejecutar**
 - Opción rápida: abrir `index.html` en un navegador (doble clic o `file://`).
